@@ -1,13 +1,19 @@
+<!doctype html>
 <html>
-<head>
-  <title>Twilio Dance</title>
-</head>
+  <head>
+    <title>Twilio Dance</title>
+    <style>
 
-<body>
-  <div>
-    <p>Client Side Man<p>
-  </div>
-
-  <script src="script.js"></script>
-</body>
+    </style>
+  </head>
+  <body>
+    client side
+    <script src="/socket.io/socket.io.js"></script>
+	<script>
+  		var socket = io();
+  		socket.on('text', function (data) {
+    		console.log(data);
+		});
+	</script>
+  </body>
 </html>
